@@ -37,7 +37,7 @@ a:focus {
 }
 
 .navbar {
-  background-color: rgba(255, 255, 255, 0.137);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 /* ---------------------------------------------------
@@ -48,13 +48,7 @@ a:focus {
 }
 
 #sidebar {
-  background: rgb(242, 174, 18);
-  background: linear-gradient(
-    242deg,
-    rgba(242, 174, 18, 1) 12%,
-    rgba(255, 255, 255, 1) 59%,
-    rgba(255, 255, 255, 1) 78%
-  );
+    
   position: relative;
   width: 325px;
   position: fixed;
