@@ -106,7 +106,7 @@ a:focus {
 
 #sidebar ul li a {
   padding: 10px;
-  font-size: 1.1em;
+  font-size: 0.9em;
   display: block;
 }
 
@@ -205,6 +205,7 @@ html {
 .components > li > a > span {
   vertical-align: middle;
 }
+
 
 .title {
   font-size: 1rem;
