@@ -58,10 +58,10 @@ a:focus {
     white
   );
   position: relative;
-  width: 270px;
+  width: 325px;
   position: fixed;
   top: 0;
-  left: -270px;
+  left: -325px;
   height: 100vh;
   z-index: 999;
   color: #fff;
