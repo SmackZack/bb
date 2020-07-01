@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
+    />
+    <link rel="stylesheet" href="style3.css" />
+
+    <!-- Font Awesome JS -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar  -->
+      <nav id="sidebar" class="bg-white">
+        <div id="dismiss" class="bg-white rounded-circle px-1">
+          <span class="material-icons h1">
+            keyboard_arrow_left
+          </span>
+        </div>
+
+        <div class="sidebar-header text-white m-3 ml-1">
+          <div class="media">
+            <img src="img/img9.jpeg" class="mr-2 rounded-circle shadow-lg" alt="..." height="64px" width="64px"/>
+            <div class="media-body">
+              <h4 class="mt-3 mb-0">Username</h4>
+              Course
+            </div>
+          </div>
+        </div>
+
+        <ul class="list-unstyled components ">
+          <li>
+            <a href="" class="text-white pl-3 border-bottom border-white text-decoration-none"
+              ><span class="material-icons mr-2"> notification_important </span
+              >Bookmarks</a
+            >
+          </li>
+          <li>
+            <a href="" class="text-white pl-3 border-bottom border-white text-decoration-none"
+              ><span class="material-icons mr-2"> bookmarks </span
+              >Notifications</a
+            >
+          </li>
+          <li>
+            <a href="" class="text-white pl-3 border-bottom border-white text-decoration-none"
+              ><span class="material-icons mr-2"> share </span>Share The App</a
+            >
+          </li>
+          <li>
+            <a href="" class="text-white pl-3 border-bottom border-white text-decoration-none"
+              ><span class="material-icons mr-2"> family_restroom </span>Parent
+              Connect</a
+            >
+          </li>
+          <li>
+            <a href="" class="text-white pl-3 border-bottom border-white text-decoration-none"
+              ><span class="material-icons mr-2"> wifi_calling </span>Conatact
+              Us</a
+            >
+          </li>
+          <li>
+            <a href="" class="text-white pl-3 border-bottom border-white text-decoration-none"
+              ><span class="material-icons mr-2"> redeem </span>Reedem
+              Voucher</a
+            >
+          </li>
+          <li>
+            <a href="" class="text-white pl-3 border-bottom border-white text-decoration-none"
+              ><span class="material-icons mr-2"> add_shopping_cart </span
+              >Subscribe Now</a
+            >
+          </li>
+          <li>
+            <a href="" class="text-white pl-3 border-bottom border-white text-decoration-none"
+              ><span class="material-icons mr-2"> info </span>Terms &
+              Conditon</a
+            >
+          </li>
+        </ul>
+
+        <ul class="list-unstyled CTAs">
+          <li>
+            <a href="" class="bg-success">Enquire Now</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content">
+        <nav class="navbar navbar-light bg-dark text-white">
+          <button
+            class="navbar-toggler ml-lg-1"
+            type="button"
+            id="sidebarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="m-auto h3">Home</div>
+          <button type="button" class="btn btn-success  mr-lg-1">
+            Share
+          </button>
+        </nav>
+        <div class="container-fluid">
+          <div class="h font-weight-normal ml-lg-5">Good Morning</div>
+          <div class="h4 ml-lg-5 mb-5">Username</div>
+          <div class="d-flex flex-wrap justify-content-between pb-5">
+            <div class="py-3 m-2 rounded shadow-lg px-lg-4 text-center card1 bg-white">
+              <img
+                src="img/icon (1).png"
+                width="70em"
+                height="70em"
+                class="rounded-circle"
+                alt=""
+              />
+              <div class="title">Title</div>
+            </div>
+            <div class="py-3 m-2 rounded shadow-lg px-lg-4 text-center card1 bg-white">
+              <img
+                src="img/icon (2).png"
+                width="70em"
+                height="70em"
+                class="rounded-circle"
+                alt=""
+              />
+              <div class="title">Title</div>
+            </div>
+            <div class="py-3 m-2 rounded shadow-lg px-lg-4 text-center card1 bg-white">
+              <img
+                src="img/icon (3).png"
+                width="70em"
+                height="70em"
+                
+                class="rounded-circle"
+                alt=""
+              />
+              <div class="title">Title</div>
+            </div>
+            <div class="py-3 m-2 rounded shadow-lg px-lg-4 text-center card1 bg-white">
+              <img
+                src="img/icon (4).png"
+                width="70em"
+                height="70em"
+                
+                class="rounded-circle"
+                alt=""
+              />
+              <div class="title">Title</div>
+            </div>
+            <div class="py-3 m-2 rounded shadow-lg px-lg-4 text-center card1 bg-white">
+              <img
+                src="img/icon (1).png"
+                width="70em"
+                height="70em"
+                
+                class="rounded-circle"
+                alt=""
+              />
+              <div class="title">Title</div>
+            </div>
+            <div class="py-3 m-2 rounded shadow-lg px-lg-4 text-center card1 bg-white">
+              <img
+                src="img/icon (6).png"
+                width="70em"
+                height="70em"
+                
+                class="rounded-circle"
+                alt=""
+              />
+              <div class="title">Title</div>
+            </div>
+            <div class="py-3 m-2 rounded shadow-lg px-lg-4 text-center card1 bg-white">
+              <img
+                src="img/icon (7).png"
+                width="70em"
+                height="70em"
+                
+                class="rounded-circle"
+                alt=""
+              />
+              <div class="title">Title</div>
+            </div>
+            <div class="py-3 m-2 rounded shadow-lg px-lg-4 text-center card1 bg-white">
+              <img
+                src="img/icon (8).png"
+                width="70em"
+                height="70em"
+                
+                class="rounded-circle"
+                alt=""
+              />
+              <div class="title">Title</div>
+            </div>
+             <div class="py-3 m-2 rounded shadow-lg px-lg-4 text-center card1 bg-white">
+              <img
+                src="img/icon (1).png"
+                width="70em"
+                height="70em"
+                class="rounded-circle"
+                alt=""
+              />
+              <div class="title">Title</div>
+            </div>
+            <div class="py-3 m-2 rounded shadow-lg px-lg-4 text-center card1 bg-white">
+              <img
+                src="img/icon (2).png"
+                width="70em"
+                height="70em"
+                
+                class="rounded-circle"
+                alt=""
+              />
+              <div class="title">Title</div>
+            </div>
+            <div class="py-3 m-2 rounded shadow-lg px-lg-4 text-center card1 bg-white">
+              <img
+                src="img/icon (3).png"
+                width="70em"
+                height="70em"
+                
+                class="rounded-circle"
+                alt=""
+              />
+              <div class="title">Title</div>
+            </div>
+            <div class="py-3 m-2 rounded shadow-lg px-lg-4 text-center card1 bg-white">
+              <img
+                src="img/icon (4).png"
+                width="70em"
+                height="70em"
+                
+                class="rounded-circle"
+                alt=""
+              />
+              <div class="title">Title</div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <h2 class="ml-5 my-3 font-weight-normal">BYJU'S Corner</h2>
+        <div class="scrolling-wrapper">
+          <div
+            class="card"
+            style="
+              background-image: url('img/img1.jpeg');
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+            "
+          >
+            <h2 class="text-white">Card Details</h2>
+          </div>
+          <div
+            class="card"
+            style="
+              background-image: url('img/img2.jpeg');
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+            "
+          >
+            <h2 class="text-white">Card Details</h2>
+          </div>
+          <div
+            class="card"
+            style="
+              background-image: url('img/img3.jpeg');
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+            "
+          >
+            <h2 class="text-white">Card Details</h2>
+          </div>
+          <div
+            class="card"
+            style="
+              background-image: url('img/img8.jpeg');
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+            "
+          >
+            <h2 class="text-white">Card Details</h2>
+          </div>
+          <div
+            class="card"
+            style="
+              background-image: url('img/img5.jpeg');
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+            "
+          >
+            <h2 class="text-white">Card Details</h2>
+          </div>
+          <div
+            class="card"
+            style="
+              background-image: url('img/img6.jpeg');
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+            "
+          >
+            <h2 class="text-white">Card Details</h2>
+          </div>
+          <div
+            class="card"
+            style="
+              background-image: url('img/img1.jpeg');
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+            "
+          >
+            <h2 class="text-white">Card Details</h2>
+          </div>
+          <div
+            class="card"
+            style="
+              background-image: url('img/img8.jpeg');
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+            "
+          >
+            <h2 class="text-white">Card Details</h2>
+          </div>
+        </div>
+
+        <hr />
+        <div></div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#sidebar").mCustomScrollbar({
+          theme: "minimal",
+        });
+
+        $("#dismiss, .overlay").on("click", function () {
+          $("#sidebar").removeClass("active");
+          $(".overlay").removeClass("active");
+        });
+
+        $("#sidebarCollapse").on("click", function () {
+          $("#sidebar").addClass("active");
+          $(".overlay").addClass("active");
+          $(".collapse.in").toggleClass("in");
+          $("a[aria-expanded=true]").attr("aria-expanded", "false");
+        });
+      });
+    </script>
+  </body>
+</html>
