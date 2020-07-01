@@ -200,3 +200,11 @@ html {
 .title {
   font-size: 1rem;
 }
+
+.position-absolute {
+  bottom: 0%;
+}
+
+.position-fixed button {
+  padding: 0px 0px;
+}
