@@ -4,18 +4,24 @@
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
-   background-image: linear-gradient(#6a197d,#5c2a9d, white);
+  background-image: linear-gradient(
+    192deg,
+    #6a197d,
+    white,
+    white,
+    white,
+    white
+  );
   font-family: "Poppins", sans-serif;
 }
 
 a,
 a:hover,
 a:focus {
-  color: inherit;
+  color: black;
   text-decoration: none;
   transition: all 0.3s;
 }
-
 
 .navbar-btn {
   box-shadow: none;
@@ -37,9 +43,20 @@ a:focus {
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
+#sidebar .icon-color {
+  color: #5c2a9d;
+}
+
 
 #sidebar {
-    background-image: linear-gradient(to bottom,purple,violet,white);
+  background-image: linear-gradient(
+    164deg,
+    #6a197d,
+    white,
+    white,
+    white,
+    white
+  );
   position: relative;
   width: 270px;
   position: fixed;
@@ -86,10 +103,6 @@ a:focus {
   opacity: 1;
 }
 
-#sidebar ul p {
-  color: #fff;
-  padding: 10px;
-}
 
 #sidebar ul li a {
   padding: 10px;
@@ -98,8 +111,7 @@ a:focus {
 }
 
 #sidebar ul li a:hover {
-  color: #7386d5;
-  background: #6a197d;
+  background-color: rgba(128, 128, 128, 0.192);
 }
 
 ul ul a {
@@ -122,8 +134,7 @@ ul.CTAs a {
 
 a.article,
 a.article:hover {
-  background: #6d7fcc !important;
-  color: #fff !important;
+  background: rgba(128, 128, 128, 0.568) !important;
 }
 
 /* ---------------------------------------------------
@@ -191,8 +202,8 @@ html {
   background-color: #f5f5f5;
 }
 
-.components > li > a > span{
-  vertical-align:middle;
+.components > li > a > span {
+  vertical-align: middle;
 }
 
 .title {
