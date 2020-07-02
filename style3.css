@@ -19,6 +19,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.bg-dark {
+  background-attachment: red!important;
+}
+
 .disable-selection {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer */
@@ -66,7 +70,7 @@ a:focus {
   top: 0;
   left: -325px;
   height: 100vh;
-  z-index: 999;
+  z-index: 9999;
   color: #fff;
   transition: all 0.3s;
   overflow-y: scroll;
