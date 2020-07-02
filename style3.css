@@ -1,5 +1,5 @@
 * {
-  transition: 0.3s
+  transition: 0.3s;
 }
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
@@ -20,7 +20,7 @@ body {
 }
 
 .bg-dark {
-  background-attachment: red!important;
+  background-attachment: red !important;
 }
 
 .disable-selection {
@@ -243,20 +243,32 @@ html {
 }
 
 .topMenu {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 60px;
-    border-top: 1px solid #000;
-    background: rgba(255, 255, 255, 0.432);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  border-top: 1px solid #000;
+  background: rgba(255, 255, 255, 0.432);
 
-    transition: all .1s;
+  transition: all 0.1s;
 }
 .hide {
-    opacity:0;
-    top:-100%;
+  opacity: 0;
+  top: -100%;
 }
 .show {
-    opacity:1;
-    top:0;
+  opacity: 1;
+  top: 0;
+}
+
+.navbar-togglern {
+  background-color: white;
+  border: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.462);
+}
+
+.navbar-togglers {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
 }

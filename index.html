@@ -141,7 +141,7 @@
       <div id="content">
         <nav class="navbar navbar-light text-white sticky-top mt-1">
           <button
-            class="navbar-toggler ml-lg-1 p-0 rounded-circle bg-white p-1 mt-1 "
+            class="navbar-toggler ml-lg-1 p-0 rounded-circle p-1 mt-1 "
             type="button"
             id="sidebarCollapse"
             
@@ -490,13 +490,15 @@
         });
       });
       myID = document.getElementById("myID");
-
+      sidebarCollapse = document.getElementById("sidebarCollapse")
       var myScrollFunc = function () {
         var y = window.scrollY;
         if (y >= 100) {
           myID.className = "topMenu show";
+          sidebarCollapse.className = "navbar-toggler ml-lg-1 p-0 rounded-circle p-1 mt-1 navbar-togglers";
         } else {
           myID.className = "topMenu hide";
+          sidebarCollapse.className = "navbar-toggler ml-lg-1 p-0 rounded-circle p-1 mt-1 navbar-togglern";
         }
       };
 
