@@ -77,6 +77,14 @@ a:focus {
   left: 0;
 }
 
+#bottom-btn {
+  position: absolute;
+  display: block;
+  font-size: 12px;
+  bottom: 0px;
+  left: 0%;
+}
+
 #dismiss {
   font-size: 34px;
   width: 30px;
