@@ -269,8 +269,6 @@ html {
   top: 0;
 }
 
-
-
 .hamburger {
   width: 20px;
   height: 2px;
@@ -289,16 +287,9 @@ html {
   box-shadow: none;
 }
 
-
-
-@-webkit-keyframes pulse {
-  from {
-    transform: scale(0.7);
-  }
-}
 @keyframes pulse {
   from {
-    transform: scale(0.7);
+    transform: scale(0.9);
   }
 }
 
@@ -308,8 +299,7 @@ html {
     background: #6a197d;
   }
   .card1:hover {
-  transform: scale(1);
-  -webkit-animation: pulse 1s ;
-          animation: pulse 1s ;
-}
+    transform: scale(1);
+    animation: pulse 0.5s;
+  }
 }
