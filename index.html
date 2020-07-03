@@ -32,7 +32,6 @@
   </head>
 
   <body>
-    
     <div class="wrapper">
       <!-- Sidebar  -->
       <nav id="sidebar" class="bg-white">
@@ -56,7 +55,7 @@
               </span>
             </div>
             <div class="media-body font-weight-lighter">
-              <h4 class="mt-3 mb-0 font-weight-bold text-dark">Username</h4>
+              <h4 class="mt-3 mb-0 font-weight-bolder text-dark">Username</h4>
               <div class="mt-1">Course</div>
             </div>
           </div>
@@ -162,7 +161,7 @@
           <div class="h5 font-weight-light mb-0 ml-lg-5 pt-5 text-1">
             Good Morning
           </div>
-          <div class="h2 mb-4 ml-lg-5 text-1">Username</div>
+          <div class="h2 mb-4 ml-lg-5 text-1 font-weight-bold">Username</div>
           <div
             class="course d-flex flex-wrap justify-content-around justify-content-lg-start pb-5 disable-selection"
           >
@@ -360,7 +359,9 @@
             </div>
           </div>
         </div>
-        <hr />
+        <div class="container-fluid">
+          <hr />
+        </div>
         <h4 class="ml-3 ml-lg-5 font-weight-normal">BYJU'S Corner</h4>
         <div class="scrolling-wrapper">
           <div
@@ -442,19 +443,19 @@
           </div>
         </div>
 
-        <hr />
         <div>
-          <div class="container mb-5">
-           
+          <div class="container-fluid mb-5">
+            <hr />
             <div class="row px-4">
-              
-              <div
-                class="col-lg-6 col-sm-12 "
-                
-              >
-               <div class="mb-2">Share the app</div>
-                <div class="row rounded-lg shadow-lg py-5"
-                style="box-shadow: 0px 2px 1px black;">
+              <div class="col-lg-6 col-sm-12 px-0">
+                <div class="mb-2">Share the app</div>
+                <div
+                  class="row rounded-lg py-4 mx-1"
+                  style="
+                    box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.582),
+                      0px 0px 4px rgba(0, 0, 0, 0.164);
+                  "
+                >
                   <div class="col-3">
                     <span
                       class="material-icons"
@@ -476,7 +477,7 @@
                     </div>
                     <div
                       class="font-weight-lighter"
-                      style="font-size: 0.8em; font-weight: 100;"
+                      style="font-size: 0.8em; font-weight: 100; color: grey;"
                     >
                       Help your friends fall in love with learning through
                       Byju's
@@ -488,6 +489,7 @@
                       style="
                         padding: 8px;
                         border-radius: 50%;
+                        color: white;
                         background-image: linear-gradient(
                           300deg,
                           rgb(228, 169, 228),
@@ -505,7 +507,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6 col-sm-12  mt-5 text-center d-md-flex  flex-md-row-reverse align-self-md-center align-self-sm-center ">
+              <div
+                class="col-lg-6 col-sm-12 mt-5 text-center d-md-flex flex-md-row-reverse align-self-md-center align-self-sm-center"
+              >
                 <button
                   class="btn material-icons"
                   onclick="topFunction()"
@@ -516,8 +520,10 @@
                     font-family: 'Material Icons';
                     font-weight: normal;
                     vertical-align: 12px;
-                    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.719);
+                    box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.582),
+                      0px 0px 4px rgba(0, 0, 0, 0.164);
                     color: purple;
+                    font-weight: bolder;
                   "
                 >
                   arrow_upward
