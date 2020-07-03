@@ -202,7 +202,7 @@ html {
 
 .card1 {
   height: 120px;
-  transition: 0.6s;
+  transition: 3s;
 }
 
 
@@ -299,7 +299,7 @@ html {
   background: #6a197d;
 }
   .card1:hover {
-  transform: scale(7);
+  transform: scale(100);
   z-index: 99999;
 }
  
