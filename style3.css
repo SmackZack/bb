@@ -234,7 +234,7 @@ html {
 }
 
 .title {
-  width: 95px;
+  width: 100px;
   letter-spacing: .5px;
   font-weight: 400;
   font-size: 0.8rem;
@@ -273,6 +273,13 @@ html {
 .show {
   opacity: 1;
   top: 0;
+}
+
+.hamburger {
+  width: 20px;
+  height: 2px;
+  background-color: purple;
+  margin: 4px 0;
 }
 
 .navbar-togglern {
