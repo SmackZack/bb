@@ -178,6 +178,7 @@ a.article:hover {
     CONTENT STYLE
 ----------------------------------------------------- */
 
+
 #content {
   width: 100%;
   min-height: 100vh;
@@ -187,6 +188,7 @@ a.article:hover {
 }
 
 .scrolling-wrapper {
+  overflow: hidden;
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
@@ -194,8 +196,8 @@ a.article:hover {
 
 .scrolling-wrapper .card {
   display: inline-block;
-  height: 150px;
   border-radius: 15px;
+  height: 150px;
   padding: 20px;
   margin: 10px 5px;
   width: 225px;
