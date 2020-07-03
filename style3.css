@@ -5,7 +5,7 @@
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
-  background-image: url('img/13386127\ \(2\).jpg');
+  background-image: url("img/13386127\ \(2\).jpg");
   background-repeat: no-repeat;
   background-position: right top;
   background-attachment: fixed;
@@ -162,7 +162,6 @@ a.article:hover {
     CONTENT STYLE
 ----------------------------------------------------- */
 
-
 #content {
   width: 100%;
   min-height: 100vh;
@@ -202,10 +201,7 @@ html {
 
 .card1 {
   height: 120px;
-  transition: 3s;
 }
-
-
 
 .bg-1 {
   background-color: #6a197d;
@@ -233,7 +229,7 @@ html {
 
 .title {
   width: 95px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   font-weight: 400;
   font-size: 0.8rem;
 }
@@ -293,14 +289,27 @@ html {
   box-shadow: none;
 }
 
+
+
+@-webkit-keyframes pulse {
+  from {
+    transform: scale(0.7);
+  }
+}
+@keyframes pulse {
+  from {
+    transform: scale(0.7);
+  }
+}
+
 @media only screen and (max-width: 600px) {
   ::-webkit-scrollbar-thumb {
-  display: none;
-  background: #6a197d;
-}
+    display: none;
+    background: #6a197d;
+  }
   .card1:hover {
-  transform: scale(100);
-  z-index: 99999;
+  transform: scale(1);
+  -webkit-animation: pulse 1s ;
+          animation: pulse 1s ;
 }
- 
 }
