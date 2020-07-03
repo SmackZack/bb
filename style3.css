@@ -202,13 +202,10 @@ html {
 
 .card1 {
   height: 120px;
-  transition: 1s;
+  transition: 2s;
 }
 
-.card1:hover {
-  transform: scale(100);
-  z-index: 99999;
-}
+
 
 .bg-1 {
   background-color: #6a197d;
@@ -300,6 +297,10 @@ html {
   ::-webkit-scrollbar-thumb {
   display: none;
   background: #6a197d;
+}
+  .card1:hover {
+  transform: scale(7);
+  z-index: 99999;
 }
  
 }
