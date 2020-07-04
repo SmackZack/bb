@@ -170,6 +170,10 @@ a.article:hover {
   right: 0;
 }
 
+.bg-none {
+  background-color: transparent;
+}
+
 .scrolling-wrapper {
   overflow: hidden;
   overflow-x: scroll;
@@ -299,7 +303,17 @@ html {
     background: #6a197d;
   }
   .card1:hover {
-    transform: scale(1);
-    animation: pulse 0.5s;
+    transform: scale(1.5);
+    
   }
+}
+
+/* embed Video css */
+ 
+@media only screen and (max-width: 600px) {
+    
+}
+
+.btn:focus {
+  box-shadow: none;
 }
