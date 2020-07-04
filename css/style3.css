@@ -231,7 +231,7 @@ html {
 
 
 .tranim:active {
-  transform: translateY(4px);
+  transform: scale(1.4);
 }
 
 .components > li > a > span {
