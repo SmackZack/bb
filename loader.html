@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+      div
+    />
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+      }
+
+      .loader {
+        box-shadow: 0px 0px 100px rgba(0, 56, 238, 0.397);
+        position: absolute;
+        animation: rotation 4s linear infinite;
+      }
+
+      @keyframes rotation {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .material-icons {
+        color: #7582f8;
+        text-shadow: 0px 5px 10px #021caf;
+        background-image: linear-gradient(157deg, #0026ff, #647afa);
+
+        border: solid #445ef3 1px;
+        font-size: 12em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="loader rounded-circle">
+        <span class="material-icons rounded-circle p-4">
+          menu_book
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
