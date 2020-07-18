@@ -8,7 +8,7 @@ body {
 /* chatbox start */
 #chatbox {
     position: fixed;
-    width: 20em;
+    width: 0em;
     right: 0%;
     background-color: white;
     z-index: 100;
