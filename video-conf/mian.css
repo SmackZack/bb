@@ -38,6 +38,10 @@ body {
     margin: 10px 0px 70px 0px;
 }
 
+.chatbubble div {
+    border-radius: 20px;
+}
+
 .closebtn svg {
     background-color: black;
     border-radius: 50%;
@@ -64,14 +68,23 @@ body {
 /* main screen */
 
 #main {
+    height: 100vh;
     margin-right: 0em;
 }
 
 
 .l-bar {
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     overflow: scroll;
+}
+
+.r-bar {
+    height: 100%
+}
+
+.vnav {
+    height: 50px;
 }
 
 ::-webkit-scrollbar {
