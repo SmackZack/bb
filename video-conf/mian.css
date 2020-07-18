@@ -121,6 +121,10 @@ body {
    opacity: .9;
 }
 
+.bg-pink {
+    background-color: pink;
+}
+
 .chatbtn {
     position: fixed;
     right: 24px;
