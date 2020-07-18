@@ -3,6 +3,7 @@ body {
     background-color: aliceblue;
     margin: 0px;
     display: inline;
+    scroll-behavior: smooth;
 }
 
 /* chatbox start */
@@ -12,7 +13,7 @@ body {
     right: 0%;
     background-color: white;
     z-index: 100;
-    height: 100vh;
+    height: 100%;
     transition: ease-in-out 0.2s;
 }
 
