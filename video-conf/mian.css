@@ -102,6 +102,7 @@ body {
 
 .box2 {
     position: relative;
+    width: ;
 }
 
 .video-nav {
@@ -137,6 +138,10 @@ body {
     position: fixed;
     right: 24px;
     bottom: 24px;
+}
+
+.fs1-none,.fs2-none,.fs3-none {
+    display: none;
 }
 
 
