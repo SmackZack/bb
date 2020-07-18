@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: aliceblue;
+    background-color: rgb(241, 227, 230);
     margin: 0px;
     display: inline;
     scroll-behavior: smooth;
@@ -9,9 +9,9 @@ body {
 /* chatbox start */
 #chatbox {
     position: fixed;
+    background-color: rgb(241, 227, 230);
     width: 0em;
     right: 0%;
-    background-color: white;
     z-index: 100;
     height: 100%;
     transition: ease-in-out 0.2s;
@@ -19,6 +19,14 @@ body {
 
 .chatmain {
     height: 100%;
+}
+
+.bg-pink2 {
+    background-color: rgb(230, 213, 216);
+}
+
+.bg-pink1 {
+    background-color: rgb(212, 199, 201);
 }
 
 .chatinput {
