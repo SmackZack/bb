@@ -158,6 +158,12 @@ body {
   right: 10%;
 }
 
+.joptn1 .btn {
+  font-size: 14px;
+  padding: 5px 14px !important;
+  font-weight: bolder;
+}
+
 .box2:hover .video-nav,
 .box2:hover .controlbtn {
   opacity: 1;
