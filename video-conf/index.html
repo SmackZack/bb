@@ -193,6 +193,85 @@
         </div>
       </div>
 
+      <div id="Notes" class="">
+        <nav class="navbar navbar-expand-lg">
+          <div class="h3">
+            Notes
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link btn btn-danger py-1" href="#" onclick="closeNotes()"
+                  >Close<span class="sr-only">(current)</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="p-4"><textarea name="" id="" cols="" rows="10" class="w-100"></textarea>
+          <button class="btn btn-success ml-auto">Add</button>
+        </div>
+        <div class="p-4">
+          <div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Note #1
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Note #2
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Note #3
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+
       <div
         class="bg-pink mx-3 rounded-lg px-3 vnav fs1 d-flex align-content-stretch mt-2"
       >
@@ -216,6 +295,11 @@
               <li class="nav-item active">
                 <a class="nav-link" href="#" onclick="openWhiteboard()"
                   >Whiteboard <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#" onclick="openNotes()"
+                  >Open Notes<span class="sr-only">(current)</span></a
                 >
               </li>
               <li class="nav-item">
@@ -268,23 +352,23 @@
                             >
                           </div>
                         </div>
-                        <div class="row p-4">
-                          <div class="col-md-4 text-center">
+                        <div class="row px-4">
+                          <div class="col-md-3 mb-4 text-center">
                             <div class="box3 bg-light rounded-lg"></div>
                           </div>
-                          <div class="col-md-4 text-center">
+                          <div class="col-md-3 mb-4 text-center">
                             <div class="box3 bg-light rounded-lg"></div>
                           </div>
-                          <div class="col-md-4 text-center">
+                          <div class="col-md-3 mb-4 text-center">
                             <div class="box3 bg-light rounded-lg"></div>
                           </div>
-                          <div class="col-md-4 text-center">
+                          <div class="col-md-3 mb-4 text-center">
                             <div class="box3 bg-light rounded-lg"></div>
                           </div>
-                          <div class="col-md-4 text-center">
+                          <div class="col-md-3 mb-4 text-center">
                             <div class="box3 bg-light rounded-lg"></div>
                           </div>
-                          <div class="col-md-4 text-center">
+                          <div class="col-md-3 mb-4 text-center">
                             <div class="box3 bg-light rounded-lg"></div>
                           </div>
                         </div>
@@ -299,6 +383,76 @@
                         </button>
                         <button type="button" class="btn bg-pink">
                           Save changes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a
+                  type="button"
+                  class="btn"
+                  data-toggle="modal"
+                  data-target="#exampleModal1"
+                >
+                  Share Screen
+                </a>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal1"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalLabel1"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content bg-pink3">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel1">
+                          Choose the Screen
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="input-group mb-3"></div>
+                        <div class="row px-4">
+                          <div class="col-md-3 mb-4 text-center">
+                            <div class="box3 bg-light rounded-lg">
+                              Whole Screen
+                            </div>
+                          </div>
+                          <div class="col-md-3 mb-4 text-center">
+                            <div class="box3 bg-light rounded-lg">
+                              Chrome Tab
+                            </div>
+                          </div>
+                          <div class="col-md-3 mb-4 text-center">
+                            <div class="box3 bg-light rounded-lg">App 1</div>
+                          </div>
+                          <div class="col-md-3 mb-4 text-center">
+                            <div class="box3 bg-light rounded-lg">App 2</div>
+                          </div>
+                          <div class="col-md-3 mb-4 text-center">
+                            <div class="box3 bg-light rounded-lg">App 3</div>
+                          </div>
+                          <div class="col-md-3 mb-4 text-center">
+                            <div class="box3 bg-light rounded-lg">App 3</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn bg-pink">
+                          Share
                         </button>
                       </div>
                     </div>
@@ -333,7 +487,9 @@
       </div>
       <div class="container-fluid pt-3">
         <div class="d-flex flex-column flex-lg-row-reverse">
-          <div class="col-lg-8 r-bar text-center d-flex align-self-center fscreen">
+          <div
+            class="col-lg-8 r-bar text-center d-flex align-self-center fscreen"
+          >
             <div class="box2" id="box2">
               <img
                 src="img/img10(2).jpeg"
@@ -963,6 +1119,12 @@
       }
       function closeWhiteboard() {
         document.getElementById("whiteboard").style.height = "0";
+      }
+      function openNotes() {
+        document.getElementById("Notes").style.display = "inline";
+      }
+      function closeNotes() {
+        document.getElementById("Notes").style.display = "none";
       }
     </script>
   </body>

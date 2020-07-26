@@ -1,9 +1,9 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(241, 227, 230);
     margin: 0px;
-    display: inline;
     scroll-behavior: smooth;
+    height: 100vh;
 }
 
 /* chatbox start */
@@ -131,6 +131,11 @@ body {
 
 .box3 {
     height: 100px;
+    }
+
+.box3:hover {
+    box-shadow: 0px 1rem 3rem rgba(0,0,0,.175)!important ;
+
 }
 
 .joptn {
@@ -179,6 +184,22 @@ body {
     top: 20px;
     right: 20px;
     z-index: 400;
+}
+
+/* Notes */
+
+#Notes {
+    height: 100vh;
+    width: 50vw;
+    transition: 0.3s;
+    display: none;
+    background-color: rgb(241, 227, 230);;
+    box-shadow: 0px 0px 5rem rgba(0,0,0,.175);
+    position: fixed;
+    z-index: 220;
+    left: 0%;
+    overflow: scroll;
+    
 }
 
 
