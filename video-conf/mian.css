@@ -1,9 +1,18 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: rgb(241, 227, 230);
     margin: 0px;
     scroll-behavior: smooth;
     height: 100vh;
+}
+
+.navbar svg {
+    width: 20px;
+    height: 20px;
+    fill: black;
+    padding-bottom: 2px;
+    margin-right: 2px;
+    margin-top: -2px;
 }
 
 /* chatbox start */
@@ -200,14 +209,6 @@ body {
     left: 0%;
     overflow: scroll;
     
-}
-
-svg {
-    width: 20px;
-    height: 20px;
-    fill: black;
-    padding-bottom: 2px;
-    margin-right: 2px;
 }
 
 
