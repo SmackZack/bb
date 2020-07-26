@@ -269,3 +269,11 @@ body {
   height: 20px;
   margin: 6px 6px;
 }
+
+ <div class="dropdown-menu shadow-lg">
+                    <a class="dropdown-item" href="#">Make Presenter</a>
+                   
+                    <a class="dropdown-item" href="#">Send File</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"></a>
+                  </div>
