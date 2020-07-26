@@ -12,7 +12,7 @@ body {
     fill: black;
     padding-bottom: 2px;
     margin-right: 2px;
-    margin-top: -2px;
+    margin-top: -2  px;
 }
 
 /* chatbox start */
@@ -211,5 +211,10 @@ body {
     
 }
 
+.sharescreen .box3 {
+    background-color: black !important;
+    box-shadow: rgba(255, 255, 255, 0.836);
+    color: white;
+}
 
 
