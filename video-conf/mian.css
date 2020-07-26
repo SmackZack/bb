@@ -202,5 +202,13 @@ body {
     
 }
 
+svg {
+    width: 20px;
+    height: 20px;
+    fill: black;
+    padding-bottom: 2px;
+    margin-right: 2px;
+}
+
 
 
