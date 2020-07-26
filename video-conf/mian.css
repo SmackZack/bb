@@ -1,220 +1,271 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(241, 227, 230);
-    margin: 0px;
-    scroll-behavior: smooth;
-    height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(241, 227, 230);
+  margin: 0px;
+  scroll-behavior: smooth;
+  height: 100vh;
 }
 
 .navbar svg {
-    width: 20px;
-    height: 20px;
-    fill: black;
-    padding-bottom: 2px;
-    margin-right: 2px;
-    margin-top: -2  px;
+  width: 30px;
+  height: 30px;
+  fill: black;
+  padding-bottom: 2px;
+  margin-right: 2px;
 }
 
 /* chatbox start */
 #chatbox {
-    position: fixed;
-    background-color: rgb(241, 227, 230);
-    width: 0em;
-    right: 0%;
-    z-index: 100;
-    height: 100%;
-    transition: ease-in-out 0.3s;
+  position: fixed;
+  background-color: rgb(241, 227, 230);
+  width: 0em;
+  right: 0%;
+  z-index: 100;
+  height: 100%;
+  transition: ease-in-out 0.3s;
 }
 
 .chatmain {
-    height: 100%;
+  height: 100%;
 }
 
 .bg-pink2 {
-    background-color: rgb(230, 213, 216);
+  background-color: rgb(230, 213, 216);
 }
 
 .bg-pink1 {
-    background-color: rgb(212, 199, 201);
+  background-color: rgb(212, 199, 201);
 }
 
 .bg-pink3 {
-    background-color: rgb(241, 227, 230);
+  background-color: rgb(241, 227, 230);
 }
 
 .chatinput {
-    position: absolute;
-    bottom: 0%
+  position: absolute;
+  bottom: 0%;
 }
 
 .chatinput svg {
-    fill: black;
-    width: 24px;
-    height: 23px;
+  fill: black;
+  width: 24px;
+  height: 23px;
 }
 
 .chatbubble {
-    height: 100vh;
-    overflow: scroll;
-    margin: 10px 0px 70px 0px;
+  height: 100vh;
+  overflow: scroll;
+  margin: 10px 0px 70px 0px;
 }
 
 .chatbubble div {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 .closebtn svg {
-    background-color: black;
-    border-radius: 50%;
-    position: absolute;
-    width: 40px;
-    fill: white;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  width: 40px;
+  fill: white;
 }
 
 .chatbtn svg {
-    fill: white;
-    width: 30px;
+  fill: white;
+  width: 30px;
 }
 
 .chatbtn {
-    background-color: rgb(9, 202, 9);
-    animation: mymove 1s infinite;
-    box-shadow: 0px 0px 80px rgb(0, 0, 0);
+  background-color: rgb(9, 202, 9);
+  animation: mymove 1s infinite;
+  box-shadow: 0px 0px 80px rgb(0, 0, 0);
 }
 
 @keyframes mymove {
-  from {box-shadow: 0px 0px 10px rgb(10, 199, 10);}
-  to {box-shadow: 0px 0px 20px rgb(0, 255, 0);}
+  from {
+    box-shadow: 0px 0px 10px rgb(10, 199, 10);
+  }
+  to {
+    box-shadow: 0px 0px 20px rgb(0, 255, 0);
+  }
 }
 /* main screen */
 
 #main {
-    height: 100vh;
-    margin-right: 0em;
-    transition: linear 0.3s;
+  height: 100vh;
+  margin-right: 0em;
+  transition: linear 0.3s;
 }
 
-
 .l-bar {
-    width: 100%;
-    height: 80vh;
-    overflow: scroll;
+  width: 100%;
+  height: 80vh;
+  overflow: scroll;
 }
 
 .r-bar {
-    height: 100%
+  height: 100%;
 }
 
 .vnav {
-    height: 50px;
+  height: 50px;
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }
 
 .box2 {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
 
-
 .video-nav {
-    transition: ease .5s;
-    position: absolute;
-    top: 5%;
-    left: 0%;
-    opacity: 0;
+  transition: ease 0.5s;
+  position: absolute;
+  top: 5%;
+  left: 0%;
+  opacity: 0;
 }
 
 .controlbtn {
-    position: absolute;
-    transition: .5s ease;
-    bottom: -5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-
+  position: absolute;
+  transition: 0.5s ease;
+  bottom: -5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
 }
 
 .box3 {
-    height: 100px;
-    }
+  height: 100px;
+}
 
 .box3:hover {
-    box-shadow: 0px 1rem 3rem rgba(0,0,0,.175)!important ;
-
+  box-shadow: 0px 1rem 3rem rgba(0, 0, 0, 0.175) !important ;
 }
 
 .joptn {
-    position: absolute;
-    top: 5%;
-    right: 10%;
+  position: absolute;
+  bottom: 8%;
+  right: 10%;
 }
 
-.box2:hover .video-nav,.box2:hover .controlbtn  {
-   opacity: 1;
+.joptn1 {
+  position: absolute;
+  top: 5%;
+  right: 10%;
 }
-.box2:hover img  {
-   opacity: .9;
+
+.box2:hover .video-nav,
+.box2:hover .controlbtn {
+  opacity: 1;
+}
+.box2:hover img {
+  opacity: 0.9;
 }
 
 .bg-pink {
-    background-color: pink;
+  background-color: pink;
 }
 
 .chatbtn {
-    position: fixed;
-    z-index: 30;
-    right: 36px;
-    bottom: 36px;
+  position: fixed;
+  z-index: 30;
+  right: 36px;
+  bottom: 36px;
 }
 
-.fs1-none,.fs2-none,.fs3-none {
-    display: none !important;
+.fs1-none,
+.fs2-none,
+.fs3-none {
+  display: none !important;
 }
 
 /* WHiteboard */
 
 #whiteboard {
-    position: fixed;
-    top: 0%;
-    height: 0px;
-    overflow: hidden;
-    width: 100vw;
-    background-color: white;
-    z-index: 25;
-    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.3s;
+  position: fixed;
+  top: 0%;
+  height: 0px;
+  overflow: hidden;
+  width: 100vw;
+  background-color: white;
+  z-index: 25;
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.3s;
 }
 
 .closeWhiteboard {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 400;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 400;
 }
 
 /* Notes */
 
 #Notes {
-    height: 100vh;
-    width: 50vw;
-    transition: 0.3s;
-    display: none;
-    background-color: rgb(241, 227, 230);;
-    box-shadow: 0px 0px 5rem rgba(0,0,0,.175);
-    position: fixed;
-    z-index: 220;
-    left: 0%;
-    overflow: scroll;
-    
+  height: 100vh;
+  width: 50vw;
+  transition: 0.3s;
+  display: none;
+  background-color: rgb(241, 227, 230);
+  box-shadow: 0px 0px 5rem rgba(0, 0, 0, 0.175);
+  position: fixed;
+  z-index: 220;
+  left: 0%;
+  overflow: scroll;
 }
 
 .sharescreen .box3 {
-    background-color: black !important;
-    box-shadow: rgba(255, 255, 255, 0.836);
-    color: white;
+  background-color: black !important;
+  box-shadow: rgba(255, 255, 255, 0.836);
+  color: white;
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
 
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.bg-red {
+  background-color: #fa1616;
+}
+.bg-red:hover {
+  background-color: #d41414;
+}
+
+.bg-green {
+  background-color: lime;
+}
+
+.bg-green:hover {
+  background-color: rgb(7, 218, 7);
+}
+
+.joptn svg {
+  fill: white;
+  width: 20px;
+  height: 20px;
+  margin: 6px 6px;
+}
