@@ -30,15 +30,21 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
+      integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/country.css" />
   </head>
-  
+
   <body>
     <div class="wrapper">
       <!-- Sidebar  -->
       <nav id="sidebar" class="bg-white">
         <button type="button" id="dismiss" class="close" aria-label="Close">
-          <span aria-hidden="true" style="color: purple;">&times;</span>
+          <span aria-hidden="true" style="color: purple">&times;</span>
         </button>
 
         <div class="sidebar-header text-dark m-3 ml-1">
@@ -149,7 +155,7 @@
               href="comingsoon.html"
               class="mx-3 rounded-pill text-center text-white"
             >
-              <span class="material-icons mr-2" style="vertical-align: middle;">
+              <span class="material-icons mr-2" style="vertical-align: middle">
                 phone_in_talk </span
               >Enquire Now</a
             >
@@ -175,14 +181,27 @@
             ></span>
           </button>
         </nav>
-   <div class="container-fluid">
-      <div class="row" id="movieList">
-        <div class="col-12 d-flex justify-content-center align-items-center" style="height: 500px;">
-          <div class="spinner-border" style="width: 10rem; height: 10rem;" role="status">
-  <span class="sr-only">Loading...</span>
-</div>
+        <div id="piechart" style="width: 100%; height: 500px"></div>
+        <div class="row">
+          <div class="col-12 table-responsive">
+            <table class="table table-dark table-sm table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Country</th>
+                  <th scope="col">New Confirmed</th>
+                  <th scope="col">New Deaths</th>
+                  <th scope="col">New Recovered</th>
+                  <th scope="col">Total Confirmed</th>
+                  <th scope="col">Total Death</th>
+                  <th scope="col">Total Recovered</th>
+                </tr>
+              </thead>
+              <tbody id="countryList"></tbody>
+            </table>
+          </div>
         </div>
-    </div></div>
+      </div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -199,8 +218,8 @@
       crossorigin="anonymous"
     ></script>
     <!-- jQuery Custom Scroller CDN -->
-    
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script type="text/javascript">
       $(document).ready(function () {
@@ -220,29 +239,71 @@
           $("a[aria-expanded=true]").attr("aria-expanded", "false");
         });
       });
-      myID = document.getElementById("myID");
-      sidebarCollapse = document.getElementById("sidebarCollapse");
-      var myScrollFunc = function () {
-        var y = window.scrollY;
-        if (y >= 40) {
-          myID.className = "topMenu show";
-          sidebarCollapse.className =
-            "navbar-toggler ml-lg-1 rounded-circle p-2 mt-2 navbar-togglers";
-        } else {
-          myID.className = "topMenu hide";
-          sidebarCollapse.className =
-            "navbar-toggler ml-lg-1 rounded-circle p-2 border border-white mt-2 shadow-lg navbar-togglern";
-        }
-      };
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-
-      window.addEventListener("scroll", myScrollFunc);
-
-      
     </script>
     <script src="script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script>
+      var settings = {
+        url: "https://api.covid19api.com/summary",
+        method: "GET",
+        timeout: 0,
+      };
+
+      $.ajax(settings).done(function (response) {
+        console.log(response);
+      });
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var clist = {
+          c: [{ v: "Mushrooms" }, { v: 3 }],
+        };
+
+        var settings = {
+          url: "https://api.covid19api.com/summary",
+          method: "GET",
+          timeout: 0,
+        };
+
+        $.ajax(settings).done(function (response) {
+          clist = [];
+          for (var i = 0; i < response.Countries.length; i++) {
+            clist.push({
+              c: [
+                { v: response.Countries[i].Country },
+                { v: response.Countries[i].TotalConfirmed },
+              ],
+            });
+          }
+
+          var jsonData = {
+            cols: [
+              { id: "", label: "Topping", pattern: "", type: "string" },
+              { id: "", label: "Slices", pattern: "", type: "number" },
+            ],
+            rows: clist,
+          };
+          var data = new google.visualization.DataTable(jsonData);
+
+          var options = {
+            title: "Data in Pie Chart",
+            pieSliceText: "label",
+            slices: {
+              76: { offset: 0.2 },
+            },
+          };
+
+          var chart = new google.visualization.PieChart(
+            document.getElementById("piechart")
+          );
+
+          chart.draw(data, options);
+        });
+      }
+    </script>
   </body>
 </html>
